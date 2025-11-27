@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>حسین — پورتفولیو</title>
-  <meta name="description" content="پورتفولیو حسین — طراح وب و UI/UX. نمونه‌کارها، خدمات و راه‌های تماس." />
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <title>Hossein — Portfolio</title>
+  <meta name="description" content="Hossein's portfolio — Web & UI/UX Designer. Projects, services, and contact." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
   <style>
     :root{
       --bg:#f7f8fb; --card:#ffffff; --muted:#667085; --accent:#4f46e5; --accent-2:#06b6d4;
@@ -13,13 +13,13 @@
     }
     *{box-sizing:border-box}
     html,body{height:100%;}
-    body{margin:0;font-family:'Vazirmatn',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial; background:var(--bg); color:#0f172a; -webkit-font-smoothing:antialiased}
+    body{margin:0;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial; background:var(--bg); color:#0f172a; -webkit-font-smoothing:antialiased}
     .container{max-width:1100px;margin:36px auto;padding:24px}
 
     header{display:flex;align-items:center;justify-content:space-between;gap:12px}
     .brand{display:flex;align-items:center;gap:12px}
-    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800}
-    nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-weight:600}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:26px}
+    nav a{margin-right:18px;text-decoration:none;color:var(--muted);font-weight:600}
     .cta{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
 
     .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin-top:28px}
@@ -29,16 +29,14 @@
     .btn{padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
     .btn.outline{border:1px solid #e6e9f0;background:transparent;color:var(--muted)}
 
-    /* grid for projects */
     .projects{margin-top:34px;display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
     .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(15,23,42,0.06);display:flex;gap:14px;align-items:flex-start}
-    .thumb{width:132px;height:88px;border-radius:10px;background:#eef2ff;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+    .thumb img{width:132px;height:88px;border-radius:10px;object-fit:cover}
     .card h3{margin:0 0 6px;font-size:18px}
     .meta{color:var(--muted);font-size:13px;margin-bottom:8px}
     .tags{display:flex;gap:8px;flex-wrap:wrap}
     .tag{font-size:12px;padding:6px 8px;border-radius:8px;background:#f3f4f6;color:#111}
 
-    /* contact */
     .contact{margin-top:34px;background:linear-gradient(90deg,#fff,#fbfeff);padding:18px;border-radius:16px;display:flex;gap:18px;align-items:center}
     .contact .left{flex:1}
     .contact form{display:flex;gap:8px;flex-wrap:wrap}
@@ -48,99 +46,91 @@
 
     footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
 
-    /* responsive */
     @media (max-width:880px){
       .hero{grid-template-columns:1fr;}
       .projects{grid-template-columns:1fr}
       nav a{display:none}
     }
-
-    /* small helpers */
-    .kpi{display:flex;gap:12px;margin-top:14px}
-    .kpi .item{background:#fff;padding:10px 12px;border-radius:10px;box-shadow:0 6px 12px rgba(15,23,42,0.04)}
   </style>
 </head>
 <body>
   <div class="container">
     <header>
       <div class="brand">
-        <div class="logo">ح</div>
+        <div class="logo">H</div>
         <div>
-          <div style="font-weight:800">حسین</div>
-          <div style="font-size:13px;color:var(--muted)">طراح وب و UI/UX</div>
+          <div style="font-weight:800">Hossein</div>
+          <div style="font-size:13px;color:var(--muted)">Web & UI/UX Designer</div>
         </div>
       </div>
       <nav>
-        <a href="#portfolio">نمونه‌کارها</a>
-        <a href="#about">درباره من</a>
-        <a href="#blog">بلاگ</a>
-        <a class="cta" href="#contact">درخواست همکاری</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a class="cta" href="#contact">Hire Me</a>
       </nav>
     </header>
 
     <section class="hero">
       <div>
-        <h1>من حسین — طراحی که تجربه رو تبدیل به محصول می‌کنه</h1>
-        <p>طراحی وب‌سایت، اپلیکیشن موبایل و برندینگ با تمرکز روی تجربه کاربری و دستیابی به اهداف کسب‌وکار. نمونه‌کارها را پایین ببینید یا همین حالا درخواست همکاری بفرستید.</p>
+        <h1>I'm Hossein — turning ideas into functional digital products</h1>
+        <p>I design websites, mobile apps, and brand identities focused on user experience and business goals. Scroll down to explore my latest work.</p>
 
         <div class="actions">
-          <a class="btn" href="#portfolio">دیدن نمونه‌کارها</a>
-          <a class="btn outline" href="#download">دریافت رزومه (PDF)</a>
-        </div>
-
-        <div class="kpi">
-          <div class="item"><div style="font-weight:800">۴+ سال</div><div style="font-size:13px;color:var(--muted)">تجربه</div></div>
-          <div class="item"><div style="font-weight:800">۵۰+</div><div style="font-size:13px;color:var(--muted)">پروژه</div></div>
-          <div class="item"><div style="font-weight:800">۳ برابـر</div><div style="font-size:13px;color:var(--muted)">افزایش تعامل</div></div>
+          <a class="btn" href="#portfolio">View Portfolio</a>
+          <a class="btn outline" href="#download">Download Resume (PDF)</a>
         </div>
       </div>
 
       <div style="display:flex;align-items:center;justify-content:center">
-        <!-- large mock preview -->
-        <div style="width:320px;border-radius:16px;overflow:hidden;box-shadow:0 12px 30px rgba(20,24,40,0.08);background:#fff;padding:18px">
-          <div style="height:180px;background:linear-gradient(135deg,var(--accent),var(--accent-2));border-radius:12px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:22px">پیش‌نمایش پروژه</div>
-          <div style="margin-top:12px;color:var(--muted);font-size:13px">قاب نمونه کار، اسکرین‌شات پروژه و دکمه جزئیات</div>
+        <div style="width:320px;border-radius:16px;overflow:hidden;box-shadow:0 12px 30px rgba(20,24,40,0.08);background:#fff;padding:18px;text-align:center">
+          <img src="screenshot-main-placeholder.png" style="height:180px;width:100%;object-fit:cover;border-radius:12px" alt="Project Preview">
+          <div style="margin-top:12px;color:var(--muted);font-size:13px">Main project screenshot placeholder</div>
         </div>
       </div>
     </section>
 
     <section id="portfolio" class="projects">
-      <!-- card 1 -->
       <article class="card">
-        <div class="thumb">وب</div>
+        <div class="thumb">
+          <img src="shot1.png" alt="Corporate Website Screenshot">
+        </div>
         <div>
-          <h3>طراحی وب‌سایت شرکتی</h3>
-          <div class="meta">طراحی UI/UX، پیاده‌سازی واکنش‌گرا، سئو اولیه</div>
+          <h3>Corporate Website Design</h3>
+          <div class="meta">Responsive layout, UX design, SEO-ready</div>
           <div class="tags"><span class="tag">Next.js</span><span class="tag">Tailwind</span><span class="tag">Node.js</span></div>
         </div>
       </article>
 
-      <!-- card 2 -->
       <article class="card">
-        <div class="thumb">اپ</div>
+        <div class="thumb">
+          <img src="shot2.png" alt="Mobile App Screenshot">
+        </div>
         <div>
-          <h3>اپلیکیشن موبایل فروشگاهی</h3>
-          <div class="meta">طراحی مسیر کاربر، پیاده‌سازی پرداخت و پنل مدیریت</div>
+          <h3>E‑Commerce Mobile App</h3>
+          <div class="meta">User flow design, payment system, admin panel</div>
           <div class="tags"><span class="tag">Flutter</span><span class="tag">Firebase</span></div>
         </div>
       </article>
 
-      <!-- card 3 -->
       <article class="card">
-        <div class="thumb">لوگو</div>
+        <div class="thumb">
+          <img src="shot3.png" alt="Branding Screenshot">
+        </div>
         <div>
-          <h3>هویت بصری و لوگو — Cafe Noir</h3>
-          <div class="meta">طراحی برند و راهنمای بصری کامل</div>
+          <h3>Brand Identity — Cafe Noir</h3>
+          <div class="meta">Logo design & brand visual guide</div>
           <div class="tags"><span class="tag">Branding</span><span class="tag">Illustrator</span></div>
         </div>
       </article>
 
-      <!-- card 4 -->
       <article class="card">
-        <div class="thumb">ویدئو</div>
+        <div class="thumb">
+          <img src="shot4.png" alt="Marketing Video Screenshot">
+        </div>
         <div>
-          <h3>تولید محتوا و ویدئو مارکتینگ</h3>
-          <div class="meta">تدوین سینماتیک و موشن‌گرافیک برای کمپین</div>
+          <h3>Content & Video Marketing</h3>
+          <div class="meta">Cinematic editing and motion graphics</div>
           <div class="tags"><span class="tag">Premiere</span><span class="tag">After Effects</span></div>
         </div>
       </article>
@@ -148,41 +138,41 @@
 
     <section id="about" style="margin-top:28px;display:flex;gap:18px;align-items:center">
       <div style="flex:1;background:var(--card);padding:18px;border-radius:14px;box-shadow:0 10px 24px rgba(12,18,40,0.04)">
-        <h3 style="margin-top:0">درباره من</h3>
-        <p style="color:var(--muted);line-height:1.6">من حسین هستم، طراح محصول و رابط کاربری با بیش از ۴ سال تجربه در پروژه‌های وب و موبایل. تمرکز من طراحی راه‌حل‌هایی است که هم کاربر را خوشحال کند و هم به اهداف کسب‌وکار برسد.</p>
+        <h3 style="margin-top:0">About Me</h3>
+        <p style="color:var(--muted);line-height:1.6">I'm Hossein, a product and UI/UX designer with 4+ years of experience in web and mobile projects. I focus on creating solutions that delight users and help businesses grow.</p>
       </div>
 
       <div style="width:260px;background:linear-gradient(135deg,#fff,#f8fbff);padding:16px;border-radius:12px;text-align:center">
-        <div style="width:88px;height:88px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:inline-flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:28px">ح</div>
-        <div style="margin-top:12px;font-weight:700">حسین</div>
-        <div style="color:var(--muted);font-size:13px;margin-top:6px">طراح وب • UI/UX</div>
+        <div style="width:88px;height:88px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:inline-flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:28px">H</div>
+        <div style="margin-top:12px;font-weight:700">Hossein</div>
+        <div style="color:var(--muted);font-size:13px;margin-top:6px">Web & UI/UX Designer</div>
       </div>
     </section>
 
     <section id="contact" class="contact">
       <div class="left">
-        <h3 style="margin:0">تماس و همکاری</h3>
-        <p style="margin:6px 0 12px;color:var(--muted)">اگر پروژه‌ای داری یا می‌خواهی همکاری کنیم، پیام بذار یا رزومه‌ام رو دانلود کن.</p>
+        <h3 style="margin:0">Contact Me</h3>
+        <p style="margin:6px 0 12px;color:var(--muted)">Have a project in mind or want to collaborate? Send me a message.</p>
 
         <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-          <input class="field" type="text" name="name" placeholder="نام شما" required>
-          <input class="field" type="email" name="email" placeholder="ایمیل" required>
-          <textarea name="message" placeholder="پیام شما..."></textarea>
+          <input class="field" type="text" name="name" placeholder="Your Name" required>
+          <input class="field" type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message..."></textarea>
           <div style="margin-top:8px;display:flex;gap:10px">
-            <button class="btn" type="submit">ارسال پیام</button>
-            <a id="download" class="btn outline" href="#">دانلود رزومه</a>
+            <button class="btn" type="submit">Send Message</button>
+            <a id="download" class="btn outline" href="#">Download Resume</a>
           </div>
         </form>
       </div>
 
       <div style="width:220px;text-align:center">
-        <div style="font-weight:800;font-size:18px">خدمات</div>
-        <div style="color:var(--muted);margin-top:8px">طراحی وب • اپ موبایل • برندینگ • تولید محتوا</div>
+        <div style="font-weight:800;font-size:18px">Services</div>
+        <div style="color:var(--muted);margin-top:8px">Web Design • Mobile Apps • Branding • Content Production</div>
       </div>
     </section>
 
     <footer>
-      © ۲۰۲۵ حسین — تمامی حقوق محفوظ است.
+      © 2025 Hossein — All rights reserved.
     </footer>
   </div>
 </body>
