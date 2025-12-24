@@ -1,221 +1,511 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Primal Inker – Premium Engraved Animal Vectors</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Primal Inker — Premium Engraved Animal Vector Pack</title>
+  <meta name="description" content="Luxury engraved animal vector collection crafted for tattoo artists, apparel brands, and premium designers." />
 
-<style>
-:root{
-  --bg:#0b0c0f;
-  --panel:#12131a;
-  --gold:#d4af37;
-  --text:#eaeaf0;
-  --muted:#a8a8b3;
-}
+  <!-- OpenGraph (Preview when shared) -->
+  <meta property="og:title" content="Primal Inker — Premium Engraved Animal Vector Pack" />
+  <meta property="og:description" content="Luxury engraved animal vector collection crafted for tattoo artists, apparel brands, and premium designers." />
+  <meta property="og:image" content="assets/images/animal-inker/og-primal-inker.jpg" />
+  <meta property="og:type" content="website" />
 
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.6;
-}
+  <style>
+    :root{
+      --bg:#07070a;
+      --panel:rgba(255,255,255,.06);
+      --panel2:rgba(255,255,255,.085);
+      --stroke:rgba(255,255,255,.10);
+      --text:rgba(255,255,255,.90);
+      --muted:rgba(255,255,255,.70);
+      --muted2:rgba(255,255,255,.55);
+      --gold1:#ffd36b;
+      --gold2:#b8872a;
+      --shadow: 0 24px 80px rgba(0,0,0,.55);
+      --r:16px;
+      --r2:22px;
+      --max:1120px;
+    }
 
-/* ---------- HERO ---------- */
-.hero{
-  position:relative;
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  overflow:hidden;
-}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(1200px 700px at 20% -10%, rgba(255,211,107,.18), transparent 55%),
+        radial-gradient(900px 600px at 90% 10%, rgba(184,135,42,.14), transparent 60%),
+        radial-gradient(1000px 800px at 40% 120%, rgba(255,255,255,.06), transparent 65%),
+        linear-gradient(180deg, #050508, #07070a 50%, #050508);
+      overflow-x:hidden;
+    }
 
-.hero::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(to bottom, rgba(0,0,0,.35), rgba(0,0,0,.75)),
-    url("assets/images/animal-inker/hero-golden-lion.png")
-    center/cover no-repeat;
-}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(14px);
+      background: rgba(5,5,8,.55);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .topbar-inner{
+      height:64px; display:flex; align-items:center; justify-content:space-between;
+      gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:800; letter-spacing:.12em; text-transform:uppercase;
+    }
+    .brand-dot{
+      width:10px; height:10px; border-radius:999px;
+      background: radial-gradient(circle at 30% 30%, var(--gold1), var(--gold2));
+      box-shadow: 0 0 0 4px rgba(255,211,107,.10);
+    }
+    .nav{
+      display:flex; gap:18px; align-items:center;
+      color:var(--muted2);
+      font-weight:600; font-size:13px;
+    }
+    .nav a{padding:10px 8px; border-radius:10px}
+    .nav a:hover{background:rgba(255,255,255,.06); color:var(--text)}
+    .cta{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid rgba(255,211,107,.35);
+      background: linear-gradient(180deg, rgba(255,211,107,.14), rgba(184,135,42,.10));
+      box-shadow: 0 12px 40px rgba(184,135,42,.12);
+      font-weight:800;
+      letter-spacing:.03em;
+    }
+    .cta:hover{filter:brightness(1.06)}
 
-.hero-content{
-  position:relative;
-  z-index:2;
-  max-width:900px;
-  padding:40px;
-}
+    /* HERO */
+    .hero{
+      position:relative;
+      min-height:88vh;
+      display:grid;
+      align-items:center;
+      padding:86px 0 54px;
+      overflow:hidden;
+    }
+    .hero::before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(800px 400px at 55% 35%, rgba(255,211,107,.20), transparent 60%),
+        linear-gradient(180deg, rgba(5,5,8,.35), rgba(5,5,8,.80)),
+        url("assets/images/animal-inker/hero-golden-lion.png") center/cover no-repeat;
+      transform: scale(1.03);
+      filter: saturate(1.05) contrast(1.02);
 
-.hero .kicker{
-  color:var(--gold);
-  letter-spacing:.18em;
-  font-size:12px;
-  font-weight:700;
-  margin-bottom:18px;
-}
+opacity:.92;
+    }
+    .hero::after{
+      content:"";
+      position:absolute; inset:0;
+      background:
+        radial-gradient(1200px 700px at 50% 35%, rgba(0,0,0,.10), rgba(0,0,0,.72)),
+        repeating-linear-gradient(
+          120deg,
+          rgba(255,255,255,.03) 0px,
+          rgba(255,255,255,.03) 1px,
+          transparent 1px,
+          transparent 9px
+        );
+      mix-blend-mode: overlay;
+      opacity:.55;
+      pointer-events:none;
+    }
 
-.hero h1{
-  font-size:clamp(40px,7vw,78px);
-  margin:0 0 18px;
-}
+    .hero-grid{
+      position:relative;
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap:26px;
+      align-items:center;
+    }
+    @media (max-width: 980px){
+      .hero{min-height:unset;padding:64px 0 40px}
+      .hero-grid{grid-template-columns:1fr; gap:18px}
+    }
 
-.hero p{
-  color:var(--muted);
-  font-size:18px;
-  max-width:720px;
-  margin:0 auto 34px;
-}
+    .kicker{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid rgba(255,211,107,.20);
+      background: rgba(0,0,0,.28);
+      color: rgba(255,211,107,.92);
+      font-weight:800;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      font-size:11px;
+      width:fit-content;
+      backdrop-filter: blur(10px);
+    }
 
-.btn{
-  display:inline-block;
-  padding:14px 34px;
-  border:1px solid var(--gold);
-  color:var(--gold);
-  text-decoration:none;
-  font-weight:600;
-  letter-spacing:.04em;
-  transition:.25s;
-}
+    h1{
+      margin:14px 0 12px;
+      font-size: clamp(36px, 5vw, 66px);
+      line-height:1.03;
+      letter-spacing:.02em;
+      text-transform:uppercase;
+      font-weight:950;
+      text-shadow: 0 18px 80px rgba(0,0,0,.55);
+    }
 
-.btn:hover{
-  background:var(--gold);
-  color:#000;
-}
+    .sub{
+      margin:0;
+      max-width:58ch;
+      color: rgba(255,255,255,.80);
+      font-size: 15px;
+      line-height:1.7;
+    }
 
-/* ---------- SECTION ---------- */
-section{
-  padding:110px 8vw;
-}
+    .hero-actions{
+      display:flex; gap:12px; margin-top:18px; flex-wrap:wrap;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:12px 16px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.25);
+      font-weight:900;
+      letter-spacing:.02em;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .btn:hover{background: rgba(255,255,255,.06)}
+    .btn.primary{
+      border-color: rgba(255,211,107,.30);
+      background: linear-gradient(180deg, rgba(255,211,107,.18), rgba(184,135,42,.10));
+    }
 
-.section-title{
-  text-align:center;
-  font-size:42px;
-  margin-bottom:70px;
-}
+    .hero-card{
+      position:relative;
+      border-radius: var(--r2);
+      border:1px solid rgba(255,255,255,.12);
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+      box-shadow: 0 40px 120px rgba(0,0,0,.65);
+      overflow:hidden;
+    }
+    .hero-card::before{
+      content:"";
+      position:absolute; inset:0;
+      background:
+        radial-gradient(400px 240px at 30% 20%, rgba(255,211,107,.18), transparent 60%),
+        radial-gradient(420px 300px at 70% 80%, rgba(184,135,42,.12), transparent 60%);
+      pointer-events:none;
+    }
+    .hero-art{
+      display:block;
+      width:100%;
+      height:auto;
+      transform: scale(1.02);
+      opacity:.98;
+    }
+    .hero-meta{
+      position:absolute;
+      left:16px; right:16px; bottom:14px;
+      display:flex; gap:10px; flex-wrap:wrap;
+    }
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      background: rgba(0,0,0,.35);
+      border:1px solid rgba(255,255,255,.12);
+      font-size:12px;
+      color: rgba(255,255,255,.78);
+      backdrop-filter: blur(12px);
+      font-weight:800;
+    }
+    .chip b{color: rgba(255,211,107,.92)}
 
-/* ---------- CARDS ---------- */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:36px;
-}
+    /* SECTIONS */
+    section{padding:56px 0}
+    .section-title{
+      font-size: 26px;
+      margin:0 0 10px;
+      letter-spacing:.02em;
+    }
+    .section-sub{
+      margin:0 0 18px;
+      color: var(--muted);
+      line-height:1.7;
+      max-width:75ch;
+    }
+
+    .grid-3{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:14px;
+    }
+    @media (max-width: 980px){
+      .grid-3{grid-template-columns:1fr; gap:12px}
+    }
 
 .card{
-  background:var(--panel);
-  padding:26px;
-  border:1px solid rgba(255,255,255,.06);
-  text-align:center;
-}
+      border-radius: var(--r);
+      border:1px solid rgba(255,255,255,.10);
+      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+    .card:hover{border-color: rgba(255,211,107,.25)}
+    .card .img{
+      width:100%;
+      aspect-ratio: 16/10;
+      object-fit: cover;
+      display:block;
+      filter: contrast(1.02);
+    }
+    .card .body{
+      padding:14px 14px 16px;
+    }
+    .card h3{
+      margin:0 0 6px;
+      font-size:16px;
+      letter-spacing:.01em;
+    }
+    .card p{
+      margin:0;
+      color: rgba(255,255,255,.72);
+      line-height:1.6;
+      font-size:13px;
+    }
 
-.card img{
-  width:100%;
-  border-radius:6px;
-  margin-bottom:22px;
-}
+    /* Banner (fix: not too dark) */
+    .banner{
+      position:relative;
+      border-radius: 22px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      box-shadow: 0 60px 140px rgba(0,0,0,.65);
+    }
+    .banner::before{
+      content:"";
+      position:absolute; inset:0;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,.55), rgba(0,0,0,.22) 55%, rgba(0,0,0,.45)),
+        url("assets/images/animal-inker/work-animalpack.png") center/cover no-repeat;
+      opacity:.88; /* مهم: دیگه خفه و تاریک نیست */
+      filter: saturate(1.05) contrast(1.05);
+    }
+    .banner::after{
+      content:"";
+      position:absolute; inset:0;
+      background:
+        radial-gradient(900px 300px at 40% 50%, rgba(255,211,107,.14), transparent 60%),
+        repeating-linear-gradient(120deg, rgba(255,255,255,.03) 0 1px, transparent 1px 10px);
+      opacity:.60;
+      mix-blend-mode: overlay;
+      pointer-events:none;
+    }
+    .banner-inner{
+      position:relative;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:22px 20px;
+    }
+    @media(max-width: 900px){
+      .banner-inner{flex-direction:column; align-items:flex-start}
+    }
+    .banner h3{
+      margin:0 0 6px;
+      font-size:20px;
+      letter-spacing:.02em;
+    }
+    .banner p{margin:0; color: rgba(255,255,255,.76); line-height:1.7; max-width:80ch}
+    .banner .btn{box-shadow:none}
 
-.card h3{
-  margin:0 0 8px;
-}
+    /* Footer */
+    footer{
+      padding:34px 0 44px;
+      color: rgba(255,255,255,.55);
+      border-top:1px solid rgba(255,255,255,.08);
+      background: rgba(0,0,0,.18);
+    }
 
-.card p{
-  color:var(--muted);
-  font-size:14px;
-}
-
-/* ---------- BOTTOM CTA ---------- */
-.cta{
-  position:relative;
-  text-align:center;
-  padding:160px 8vw;
-  overflow:hidden;
-}
-
-.cta::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(to top, rgba(0,0,0,.65), rgba(0,0,0,.85)),
-    url("assets/images/animal-inker/work-animal-golden-pack.png")
-    center/contain no-repeat;
-}
-
-.cta-content{
-  position:relative;
-  z-index:2;
-}
-
-.cta h2{
-  font-size:42px;
-  margin-bottom:26px;
-}
-
-/* ---------- FOOTER ---------- */
-footer{
-  text-align:center;
-  padding:30px;
-  color:#777;
-  font-size:13px;
-}
-</style>
+    /* small helper */
+    .split{
+      display:flex; align-items:flex-end; justify-content:space-between; gap:12px;
+      margin-bottom:14px;
+    }
+    .mini{
+      font-size:12px;
+      color: rgba(255,255,255,.58);
+      letter-spacing:.04em;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span>Primal Inker</span>
+      </div>
 
-<!-- HERO -->
-<header class="hero">
-  <div class="hero-content">
-    <div class="kicker">GOLDEN LION ENGRAVING</div>
-    <h1>PRIMAL INKER</h1>
-    <p>
-      A luxury engraved animal vector collection crafted for tattoo artists,
-      apparel brands and premium designers.
-    </p>
-    <a href="#collection" class="btn">View Collection</a>
-  </div>
-</header>
+      <nav class="nav">
+        <a href="#collection">Collection</a>
+        <a href="#inside">Inside</a>
+        <a href="#usecases">Use Cases</a>
+        <a href="#buy">Buy</a>
+      </nav>
 
-<!-- COLLECTION -->
-<section id="collection">
-  <h2 class="section-title">What’s Inside the Pack</h2>
-
-  <div class="grid">
-    <div class="card">
-      <img src="assets/images/animal-inker/section-animal-bundle.jpg" alt="">
-      <h3>Golden Animal Pack</h3>
-      <p>High-detail engraved animal vectors</p>
-    </div>
-
-    <div class="card">
-      <img src="assets/images/animal-inker/mockup-tshirt-lion.jpg" alt="">
-      <h3>Apparel Mockups</h3>
-      <p>Ready for print & branding</p>
-    </div>
-
-    <div class="card">
-      <img src="assets/images/animal-inker/mockup-tattoo-centaur.jpg" alt="">
-      <h3>Tattoo Ready</h3>
-      <p>Optimized for ink & skin</p>
+      <a class="cta" href="#buy">Buy the Pack</a>
     </div>
   </div>
-</section>
 
-<!-- CTA -->
-<section class="cta">
-  <div class="cta-content">
-    <h2>Own a Premium Animal Vector Bundle</h2>
-    <a href="#" class="btn">Get Instant Access</a>
-  </div>
-</section>
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="kicker">Golden Lion Engraving</div>
+        <h1>PRIMAL INKER</h1>
+        <p class="sub">
+          A luxury engraved animal vector collection crafted for tattoo artists, apparel brands and premium designers.
+          Clean paths, timeless engraving aesthetics — ready for commercial use.
+        </p>
 
-<footer>
-© 2025 Primal Inker — Premium Engraved Vector Art
-</footer>
+        <div class="hero-actions">
+          <a class="btn primary" href="#collection">View Collection</a>
+          <a class="btn" href="#inside">What’s inside</a>
+        </div>
+      </div>
 
+      <!-- Right hero visual (foreground) -->
+      <div class="hero-card" aria-label="Hero visual">
+
+<!-- اگر این تصویر لود نشه، باز هم hero پس‌زمینه (hero-golden-lion.png) دیده میشه -->
+        <img class="hero-art" src="assets/images/animal-inker/hero-golden-lion.png" alt="Golden crowned lion engraving" />
+        <div class="hero-meta">
+          <span class="chip"><b>Formats:</b> SVG / EPS / AI</span>
+          <span class="chip"><b>Use:</b> Tattoo • Apparel • Brand</span>
+          <span class="chip"><b>Style:</b> Engraved Luxury</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- COLLECTION -->
+  <section id="collection">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <h2 class="section-title">Premium Engraved Collection</h2>
+          <p class="section-sub">
+            A curated set of high-impact engraved vectors & mockups designed to sell: sharp silhouettes, clean detailing, premium presentation.
+          </p>
+        </div>
+        <div class="mini">assets/images/animal-inker/</div>
+      </div>
+
+      <div class="grid-3">
+        <article class="card">
+          <img class="img" src="assets/images/animal-inker/section-animal-bundle.jpg" alt="Animal bundle cover" />
+          <div class="body">
+            <h3>Golden Animal Pack</h3>
+            <p>High-detail engraved vectors with premium presentation.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="img" src="assets/images/animal-inker/mokup-tshirt-lion.jpg" alt="T-shirt mockup lion" />
+          <div class="body">
+            <h3>Apparel Mockups</h3>
+            <p>Ready for print & branding previews — saves time in sales pages.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="img" src="assets/images/animal-inker/mokup-tattoo-centaur.jpg" alt="Tattoo mockup centaur" />
+          <div class="body">
+            <h3>Tattoo Ready</h3>
+            <p>Optimized for ink & skin — bold readability at distance.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSIDE THE PACK -->
+  <section id="inside">
+    <div class="wrap">
+      <h2 class="section-title">What’s Inside the Pack</h2>
+      <p class="section-sub">
+        Hero-grade visuals + real-world mockups + signature assets — designed to convert international buyers.
+      </p>
+
+      <div class="grid-3">
+        <article class="card">
+          <img class="img" src="assets/images/animal-inker/hero-tiger.png" alt="Tiger vector" />
+          <div class="body">
+            <h3>Engraved Tiger</h3>
+            <p>Bold contrast, sharp edges, clean silhouette — ideal for branding.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="img" src="assets/images/animal-inker/signature-lion.jpg" alt="Signature lion mock" />
+          <div class="body">
+            <h3>Signature Lion</h3>
+            <p>A premium “brand mark” look for logos, patches and emblems.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="img" src="assets/images/animal-inker/mokup-frame-lion.jpg" alt="Frame mockup lion" />
+          <div class="body">
+            <h3>Frame Mockup</h3>
+            <p>Instant portfolio shot — perfect for marketplaces & promos.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- USE CASES + CTA BANNER (fix: not too dark) -->
+  <section id="usecases">
+    <div class="wrap">
+      <h2 class="section-title">Built for Professionals</h2>
+      <p class="section-sub">
+        Delivered in high-resolution formats with clean paths and timeless engraving aesthetics — ready for commercial use.
+      </p>
+
+      <div class="banner" id="buy">
+        <div class="banner-inner">
+          <div>
+            <h3>Own a Premium Animal Vector Bundle</h3>
+            <p>
+
+Get instant access to premium assets crafted for tattoo artists, apparel brands and designers.
+              Clean export, ready to sell.
+            </p>
+          </div>
+          <a class="btn primary" href="#top">Get Instant Access</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      © 2025 Primal Inker — Premium Engraved Vector Art
+    </div>
+  </footer>
 </body>
 </html>
