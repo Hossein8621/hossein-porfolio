@@ -1,3 +1,4 @@
+Oliver, [12/24/2025 2:52 PM]
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
   <title>Primal Inker — Premium Engraved Animal Vector Pack</title>
   <meta name="description" content="Luxury engraved animal vector collection crafted for tattoo artists, apparel brands, and premium designers." />
 
-  <!-- OpenGraph (Preview when shared) -->
+  <!-- OpenGraph -->
   <meta property="og:title" content="Primal Inker — Premium Engraved Animal Vector Pack" />
   <meta property="og:description" content="Luxury engraved animal vector collection crafted for tattoo artists, apparel brands, and premium designers." />
   <meta property="og:image" content="assets/images/animal-inker/og-primal-inker.jpg" />
@@ -23,6 +24,7 @@
       --muted2:rgba(255,255,255,.55);
       --gold1:#ffd36b;
       --gold2:#b8872a;
+      --gold3:#8a6420;
       --shadow: 0 24px 80px rgba(0,0,0,.55);
       --r:16px;
       --r2:22px;
@@ -45,6 +47,8 @@
 
     a{color:inherit;text-decoration:none}
     .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+
+    /* Topbar */
     .topbar{
       position:sticky; top:0; z-index:50;
       backdrop-filter: blur(14px);
@@ -57,7 +61,7 @@
     }
     .brand{
       display:flex; align-items:center; gap:10px;
-      font-weight:800; letter-spacing:.12em; text-transform:uppercase;
+      font-weight:900; letter-spacing:.14em; text-transform:uppercase;
     }
     .brand-dot{
       width:10px; height:10px; border-radius:999px;
@@ -67,7 +71,7 @@
     .nav{
       display:flex; gap:18px; align-items:center;
       color:var(--muted2);
-      font-weight:600; font-size:13px;
+      font-weight:700; font-size:13px;
     }
     .nav a{padding:10px 8px; border-radius:10px}
     .nav a:hover{background:rgba(255,255,255,.06); color:var(--text)}
@@ -76,9 +80,9 @@
       padding:10px 14px;
       border-radius:999px;
       border:1px solid rgba(255,211,107,.35);
-      background: linear-gradient(180deg, rgba(255,211,107,.14), rgba(184,135,42,.10));
+      background: linear-gradient(180deg, rgba(255,211,107,.16), rgba(184,135,42,.10));
       box-shadow: 0 12px 40px rgba(184,135,42,.12);
-      font-weight:800;
+      font-weight:900;
       letter-spacing:.03em;
     }
     .cta:hover{filter:brightness(1.06)}
@@ -86,29 +90,33 @@
     /* HERO */
     .hero{
       position:relative;
-      min-height:88vh;
+      min-height:92vh;
       display:grid;
       align-items:center;
       padding:86px 0 54px;
       overflow:hidden;
     }
+
+    /* ✅ مهم: مسیر هیرو = همون فایل اولت */
     .hero::before{
       content:"";
       position:absolute; inset:-2px;
       background:
         radial-gradient(800px 400px at 55% 35%, rgba(255,211,107,.20), transparent 60%),
-        linear-gradient(180deg, rgba(5,5,8,.35), rgba(5,5,8,.80)),
-        url("assets/images/animal-inker/GOLDEN CROWNED LION_FULL SIZE.PNG") center/cover no-repeat;
-      transform: scale(1.03);
-      filter: saturate(1.05) contrast(1.02);
+        linear-gradient(180deg, rgba(5,5,8,.20), rgba(5,5,8,.82)),
+        url("assets/images/animal-inker/GOLDEN%20CROWNED%20LION_FULL%20SIZE.PNG") center/cover no-repeat;
 
-opacity:.92;
+Oliver, [12/24/2025 2:52 PM]
+transform: scale(1.04);
+      filter: saturate(1.06) contrast(1.06);
+      opacity:.96;
     }
     .hero::after{
       content:"";
       position:absolute; inset:0;
       background:
-        radial-gradient(1200px 700px at 50% 35%, rgba(0,0,0,.10), rgba(0,0,0,.72)),
+        radial-gradient(1200px 700px at 50% 35%, rgba(0,0,0,.08), rgba(0,0,0,.72)),
+        radial-gradient(700px 420px at 20% 85%, rgba(255,211,107,.16), transparent 60%),
         repeating-linear-gradient(
           120deg,
           rgba(255,255,255,.03) 0px,
@@ -117,7 +125,7 @@ opacity:.92;
           transparent 9px
         );
       mix-blend-mode: overlay;
-      opacity:.55;
+      opacity:.60;
       pointer-events:none;
     }
 
@@ -131,6 +139,7 @@ opacity:.92;
     @media (max-width: 980px){
       .hero{min-height:unset;padding:64px 0 40px}
       .hero-grid{grid-template-columns:1fr; gap:18px}
+      .nav{display:none}
     }
 
     .kicker{
@@ -139,10 +148,10 @@ opacity:.92;
       align-items:center;
       padding:8px 12px;
       border-radius:999px;
-      border:1px solid rgba(255,211,107,.20);
-      background: rgba(0,0,0,.28);
+      border:1px solid rgba(255,211,107,.22);
+      background: rgba(0,0,0,.30);
       color: rgba(255,211,107,.92);
-      font-weight:800;
+      font-weight:900;
       letter-spacing:.14em;
       text-transform:uppercase;
       font-size:11px;
@@ -152,7 +161,7 @@ opacity:.92;
 
     h1{
       margin:14px 0 12px;
-      font-size: clamp(36px, 5vw, 66px);
+      font-size: clamp(38px, 5.2vw, 70px);
       line-height:1.03;
       letter-spacing:.02em;
       text-transform:uppercase;
@@ -162,10 +171,10 @@ opacity:.92;
 
     .sub{
       margin:0;
-      max-width:58ch;
-      color: rgba(255,255,255,.80);
+      max-width:60ch;
+      color: rgba(255,255,255,.82);
       font-size: 15px;
-      line-height:1.7;
+      line-height:1.75;
     }
 
     .hero-actions{
@@ -177,15 +186,15 @@ opacity:.92;
       border-radius:14px;
       border:1px solid rgba(255,255,255,.12);
       background: rgba(0,0,0,.25);
-      font-weight:900;
+      font-weight:950;
       letter-spacing:.02em;
-      box-shadow: var(--shadow);
+      box-shadow: 0 24px 70px rgba(0,0,0,.45);
       backdrop-filter: blur(10px);
     }
     .btn:hover{background: rgba(255,255,255,.06)}
     .btn.primary{
-      border-color: rgba(255,211,107,.30);
-      background: linear-gradient(180deg, rgba(255,211,107,.18), rgba(184,135,42,.10));
+      border-color: rgba(255,211,107,.34);
+      background: linear-gradient(180deg, rgba(255,211,107,.20), rgba(184,135,42,.10));
     }
 
     .hero-card{
@@ -193,15 +202,15 @@ opacity:.92;
       border-radius: var(--r2);
       border:1px solid rgba(255,255,255,.12);
       background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
-      box-shadow: 0 40px 120px rgba(0,0,0,.65);
+      box-shadow: 0 50px 140px rgba(0,0,0,.70);
       overflow:hidden;
     }
     .hero-card::before{
       content:"";
       position:absolute; inset:0;
       background:
-        radial-gradient(400px 240px at 30% 20%, rgba(255,211,107,.18), transparent 60%),
-        radial-gradient(420px 300px at 70% 80%, rgba(184,135,42,.12), transparent 60%);
+        radial-gradient(420px 260px at 30% 20%, rgba(255,211,107,.18), transparent 60%),
+        radial-gradient(520px 360px at 70% 90%, rgba(184,135,42,.14), transparent 60%);
       pointer-events:none;
     }
     .hero-art{
@@ -220,16 +229,16 @@ opacity:.92;
       display:inline-flex; align-items:center; gap:8px;
       padding:8px 10px;
       border-radius:999px;
-      background: rgba(0,0,0,.35);
+      background: rgba(0,0,0,.38);
       border:1px solid rgba(255,255,255,.12);
       font-size:12px;
       color: rgba(255,255,255,.78);
       backdrop-filter: blur(12px);
-      font-weight:800;
+      font-weight:900;
     }
     .chip b{color: rgba(255,211,107,.92)}
 
-    /* SECTIONS */
+    /* Sections */
     section{padding:56px 0}
     .section-title{
       font-size: 26px;
@@ -240,7 +249,7 @@ opacity:.92;
       margin:0 0 18px;
       color: var(--muted);
       line-height:1.7;
-      max-width:75ch;
+      max-width:80ch;
     }
 
     .grid-3{
@@ -252,62 +261,60 @@ opacity:.92;
       .grid-3{grid-template-columns:1fr; gap:12px}
     }
 
+Oliver, [12/24/2025 2:52 PM]
 .card{
       border-radius: var(--r);
       border:1px solid rgba(255,255,255,.10);
-      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
+      background: linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.03));
       box-shadow: var(--shadow);
       overflow:hidden;
       position:relative;
     }
-    .card:hover{border-color: rgba(255,211,107,.25)}
+    .card:hover{border-color: rgba(255,211,107,.26)}
     .card .img{
       width:100%;
       aspect-ratio: 16/10;
       object-fit: cover;
       display:block;
-      filter: contrast(1.02);
+      filter: contrast(1.03) saturate(1.03);
     }
-    .card .body{
-      padding:14px 14px 16px;
-    }
-    .card h3{
-      margin:0 0 6px;
-      font-size:16px;
-      letter-spacing:.01em;
-    }
-    .card p{
-      margin:0;
-      color: rgba(255,255,255,.72);
-      line-height:1.6;
-      font-size:13px;
+    .card .body{padding:14px 14px 16px}
+    .card h3{margin:0 0 6px;font-size:16px;letter-spacing:.01em}
+    .card p{margin:0;color: rgba(255,255,255,.72);line-height:1.6;font-size:13px}
+
+    /* Premium divider */
+    .divider{
+      height:1px;
+      background: linear-gradient(90deg, transparent, rgba(255,211,107,.25), rgba(255,255,255,.12), rgba(255,211,107,.25), transparent);
+      margin: 22px 0;
+      opacity:.9;
     }
 
-    /* Banner (fix: not too dark) */
+    /* Banner CTA (fix: not too dark + clearer image) */
     .banner{
       position:relative;
       border-radius: 22px;
       overflow:hidden;
       border:1px solid rgba(255,255,255,.10);
       background: rgba(255,255,255,.04);
-      box-shadow: 0 60px 140px rgba(0,0,0,.65);
+      box-shadow: 0 60px 160px rgba(0,0,0,.70);
     }
     .banner::before{
       content:"";
       position:absolute; inset:0;
       background:
-        linear-gradient(90deg, rgba(0,0,0,.55), rgba(0,0,0,.22) 55%, rgba(0,0,0,.45)),
+        linear-gradient(90deg, rgba(0,0,0,.52), rgba(0,0,0,.22) 55%, rgba(0,0,0,.48)),
         url("assets/images/animal-inker/work-animalpack.png") center/cover no-repeat;
-      opacity:.88; /* مهم: دیگه خفه و تاریک نیست */
-      filter: saturate(1.05) contrast(1.05);
+      opacity:.92; /* روشن‌تر از قبل */
+      filter: saturate(1.06) contrast(1.08) brightness(1.05); /* ✅ مشکل تیرگی حل */
     }
     .banner::after{
       content:"";
       position:absolute; inset:0;
       background:
-        radial-gradient(900px 300px at 40% 50%, rgba(255,211,107,.14), transparent 60%),
+        radial-gradient(900px 340px at 35% 50%, rgba(255,211,107,.18), transparent 62%),
         repeating-linear-gradient(120deg, rgba(255,255,255,.03) 0 1px, transparent 1px 10px);
-      opacity:.60;
+      opacity:.62;
       mix-blend-mode: overlay;
       pointer-events:none;
     }
@@ -317,18 +324,13 @@ opacity:.92;
       align-items:center;
       justify-content:space-between;
       gap:16px;
-      padding:22px 20px;
+      padding:24px 20px;
     }
     @media(max-width: 900px){
       .banner-inner{flex-direction:column; align-items:flex-start}
     }
-    .banner h3{
-      margin:0 0 6px;
-      font-size:20px;
-      letter-spacing:.02em;
-    }
-    .banner p{margin:0; color: rgba(255,255,255,.76); line-height:1.7; max-width:80ch}
-    .banner .btn{box-shadow:none}
+    .banner h3{margin:0 0 6px;font-size:20px;letter-spacing:.02em}
+    .banner p{margin:0;color: rgba(255,255,255,.78);line-height:1.7;max-width:80ch}
 
     /* Footer */
     footer{
@@ -337,16 +339,14 @@ opacity:.92;
       border-top:1px solid rgba(255,255,255,.08);
       background: rgba(0,0,0,.18);
     }
-
-    /* small helper */
-    .split{
-      display:flex; align-items:flex-end; justify-content:space-between; gap:12px;
-      margin-bottom:14px;
-    }
     .mini{
       font-size:12px;
       color: rgba(255,255,255,.58);
       letter-spacing:.04em;
+    }
+    .split{
+      display:flex; align-items:flex-end; justify-content:space-between; gap:12px;
+      margin-bottom:14px;
     }
   </style>
 </head>
@@ -385,13 +385,19 @@ opacity:.92;
           <a class="btn primary" href="#collection">View Collection</a>
           <a class="btn" href="#inside">What’s inside</a>
         </div>
+
+        <div class="divider"></div>
+
+        <p class="mini">
+          Premium export: clean curves • sharp silhouettes • brand-ready presentation.
+        </p>
       </div>
 
-      <!-- Right hero visual (foreground) -->
+Oliver, [12/24/2025 2:52 PM]
+<!-- Right hero visual (foreground) -->
       <div class="hero-card" aria-label="Hero visual">
-
-<!-- اگر این تصویر لود نشه، باز هم hero پس‌زمینه (hero-golden-lion.png) دیده میشه -->
-        <img class="hero-art" src="assets/images/animal-inker/hero-golden-lion.png" alt="Golden crowned lion engraving" />
+        <!-- ✅ مهم: اینم همون فایل اول -->
+        <img class="hero-art" src="assets/images/animal-inker/GOLDEN%20CROWNED%20LION_FULL%20SIZE.PNG" alt="Golden crowned lion (full size)" />
         <div class="hero-meta">
           <span class="chip"><b>Formats:</b> SVG / EPS / AI</span>
           <span class="chip"><b>Use:</b> Tattoo • Apparel • Brand</span>
@@ -424,7 +430,7 @@ opacity:.92;
         </article>
 
         <article class="card">
-          <img class="img" src="assets/images/animal-inker/mokup-tshirt-lion.jpg" alt="T-shirt mockup lion" />
+          <img class="img" src="assets/images/animal-inker/mockup-tshirt-lion.jpg" alt="T-shirt mockup lion" />
           <div class="body">
             <h3>Apparel Mockups</h3>
             <p>Ready for print & branding previews — saves time in sales pages.</p>
@@ -432,7 +438,7 @@ opacity:.92;
         </article>
 
         <article class="card">
-          <img class="img" src="assets/images/animal-inker/mokup-tattoo-centaur.jpg" alt="Tattoo mockup centaur" />
+          <img class="img" src="assets/images/animal-inker/mockup-tattoo-centaur.jpg" alt="Tattoo mockup centaur" />
           <div class="body">
             <h3>Tattoo Ready</h3>
             <p>Optimized for ink & skin — bold readability at distance.</p>
@@ -442,7 +448,7 @@ opacity:.92;
     </div>
   </section>
 
-  <!-- INSIDE THE PACK -->
+  <!-- INSIDE -->
   <section id="inside">
     <div class="wrap">
       <h2 class="section-title">What’s Inside the Pack</h2>
@@ -468,7 +474,7 @@ opacity:.92;
         </article>
 
         <article class="card">
-          <img class="img" src="assets/images/animal-inker/mokup-frame-lion.jpg" alt="Frame mockup lion" />
+          <img class="img" src="assets/images/animal-inker/mockup-frame-lion.jpg" alt="Frame mockup lion" />
           <div class="body">
             <h3>Frame Mockup</h3>
             <p>Instant portfolio shot — perfect for marketplaces & promos.</p>
@@ -478,7 +484,7 @@ opacity:.92;
     </div>
   </section>
 
-  <!-- USE CASES + CTA BANNER (fix: not too dark) -->
+  <!-- USE CASES + BUY -->
   <section id="usecases">
     <div class="wrap">
       <h2 class="section-title">Built for Professionals</h2>
@@ -490,9 +496,10 @@ opacity:.92;
         <div class="banner-inner">
           <div>
             <h3>Own a Premium Animal Vector Bundle</h3>
-            <p>
 
-Get instant access to premium assets crafted for tattoo artists, apparel brands and designers.
+Oliver, [12/24/2025 2:52 PM]
+<p>
+              Get instant access to premium assets crafted for tattoo artists, apparel brands and designers.
               Clean export, ready to sell.
             </p>
           </div>
